@@ -18,3 +18,56 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.country {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.country {
+  font-size: 16px;
+}
+
+.country__title {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.country__info {
+  color: rgb(163, 143, 143);
+  margin-top: 10px;
+}
+
+span {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.bigflag {
+  width: 200px;
+}
