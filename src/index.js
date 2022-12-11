@@ -33,7 +33,7 @@ function onSearch(evt) {
   //     return;
   //   } else
   if (valueInput.length === 0) {
-    Notify.info('Please start entering some country for searching', {
+    Notify.info('Please entering some symbol for searching', {
       timeout: TIMEOUT_NOTIFICATION,
     });
     refs.countryList.innerHTML = '';
