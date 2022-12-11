@@ -4,15 +4,7 @@ import throttle from 'lodash.throttle';
 import debounce from 'lodash.debounce';
 import { fetchCountries } from './fetchCountries';
 
-/* поля із json
-name.official;
-capital;
-languages;
-population;
-flags.svg;
-coatOfArms.svg;
-*/
-const DEBOUNCE_DELAY = 300;
+DEBOUNCE_DELAY = 300;
 const TIMEOUT_NOTIFICATION = 4000;
 
 const refs = {
@@ -25,13 +17,6 @@ refs.searchField.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 
 function onSearch(evt) {
   const valueInput = evt.target.value.trim();
-
-  //   if (valueInput.length === 1) {
-  //     Notify.warning('At least 2 letters must be entered to search', {
-  //       timeout: TIMEOUT_NOTIFICATION,
-  //     });
-  //     return;
-  //   } else
   if (valueInput.length === 0) {
     Notify.info('Please entering some symbol for searching', {
       timeout: TIMEOUT_NOTIFICATION,
