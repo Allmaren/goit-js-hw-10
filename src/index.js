@@ -4,7 +4,7 @@ import throttle from 'lodash.throttle';
 import debounce from 'lodash.debounce';
 import { fetchCountries } from './fetchCountries';
 
-DEBOUNCE_DELAY = 300;
+const DEBOUNCE_DELAY = 300;
 const TIMEOUT_NOTIFICATION = 4000;
 
 const refs = {
